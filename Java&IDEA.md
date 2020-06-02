@@ -23,7 +23,7 @@ String str = sc.next();
 3. 随机数：random
 ```java
 Random r = new Random();
-//0~n随机数
+//0~n随机数，[0,n)
 int num = r.nextInt(n);
 ```
 
@@ -39,6 +39,8 @@ list.add(str);
 list.add(index,str);
 //从集合中获取元素
 list.get(index);
+//集合修改元素
+list.set(index,num)
 //从集合中删除指定位置元素并返回
 String s = list.remove(index);
 //集合长度
@@ -130,7 +132,12 @@ Math.PI
    1.  本类成员方法中，访问本类成员变量
    2.  本类成员方法中，访问本类另一个成员方法
    3.  本类构造方法中，访问本类另一个构造方法
-10. 继承特点
+10. 继承特点 **(extend)**
     1.  Java单继承，一个子类只有一个直接父类
     2.  Java多级继承
     3.  Java一个父类可以有多个子类
+11. 抽象类 **(abstract)**
+    1.  有抽象方法的类必须是抽象类
+    2.  不能直接创建抽象类对象
+    3.  必须用一个子类继承抽象类
+    4.  子类必须重写抽象类所有的抽象方法
