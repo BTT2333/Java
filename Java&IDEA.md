@@ -73,6 +73,12 @@ String str2 = str.substring(begin);
 String str1 = str.replace(oldStr,newStr);
 //按照参数分割字符串,"."需要写为"\\."
 String[] strArray = str.split(",")
+//char转String
+String str1 = String.valueOf(str.charAt(index));
+String str1 = String.valueOf('c');
+//String转char数组
+char[] ch = String.toCharArray(str)
+
 ```
 ### Arrays
 ```java
@@ -141,3 +147,18 @@ Math.PI
     2.  不能直接创建抽象类对象
     3.  必须用一个子类继承抽象类
     4.  子类必须重写抽象类所有的抽象方法
+
+
+### 接口
+1. 接口中可以定义常量、抽象方法（7）、静态方法、默认方法（8）
+2. 注意事项：
+   1. 接口中的抽象方法必须是两个固定关键字：**public、abstract**
+   2. 两个关键字修饰符可以选择性省略
+3. 接口使用步骤
+   1. 必须有一个实现类来实现该接口 **(implement)**
+   2. 接口实现类必须覆盖重写接口所有的抽象方法
+   3. new 实现类
+4. 接口默认方法 **(defalut)**
+   1. 接口中的默认方法 **(defalut)** 可以解决接口升级问题
+   2. 接口的默认方法可以通过实现类来直接调用
+   3. 接口的默认方法可以被实现类进行覆盖重写
